@@ -76,6 +76,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Yatube.wsgi.application'
 
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# Или так: 
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] 
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
