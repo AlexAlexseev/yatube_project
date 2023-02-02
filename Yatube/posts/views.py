@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Импортируем загрузчик.
 
-
-
 # Главная страница
 def index(request):    
     template = 'posts/index.html'
@@ -13,10 +11,10 @@ def index(request):
     }
     return render(request, template, context) 
 
-def group_posts(request):
-    # return HttpResponse(f'Тут будет пост с названием: {slug}')
+def group_posts(request, slug):
     template = 'posts/group_list.html'
-    text = 'Здесь будет информация о группах проекта Yatubes'
+    text = f'Здесь будет информация о группах проекта Yatubes {slug}'
+    slug = "test"
     context = {
         'text': text,
     }
