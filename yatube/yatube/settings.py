@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Yatube.wsgi.application'
+WSGI_APPLICATION = 'yatube.wsgi.application'
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # Или так: 
